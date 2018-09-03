@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import KRLoader
 
 class ViewController: UIViewController {
 
@@ -21,11 +22,16 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+
+  
   @IBAction func startAnimating(_ sender: UIButton) {
+
+    loader.startAnimation()
 
   }
   @IBAction func stopAnimating(_ sender: UIButton) {
-    
+
+    loader.stopAnimation()
   }
   
 }
