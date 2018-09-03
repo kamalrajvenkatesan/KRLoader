@@ -1,0 +1,16 @@
+PODS:
+  - KRLoader (0.1.0)
+
+DEPENDENCIES:
+  - KRLoader (from `../`)
+
+EXTERNAL SOURCES:
+  KRLoader:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  KRLoader: bfcf44f47ebe646ec3e088630148de1dff1d5cf0
+
+PODFILE CHECKSUM: 24914da197c861aedaf1fab3657d211e92cd2381
+
+COCOAPODS: 1.5.3

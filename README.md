@@ -22,7 +22,7 @@ pod 'KRLoader'
 
 ## Author
 
-kamalraj.venkatesan, kamalraj.venkatesan@gyanmatrix.com
+kamalraj venkatesan, reach.kamalraj@outlook.com
 
 ## License
 
