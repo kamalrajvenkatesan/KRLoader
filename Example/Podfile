@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'KRLoader_Example' do
+  pod 'KRLoader', :path => '../'
+
+  target 'KRLoader_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
