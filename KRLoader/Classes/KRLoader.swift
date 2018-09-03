@@ -8,7 +8,7 @@
 
 import UIKit
 
-class KRLoader: UIView {
+public class KRLoader: UIView {
 
 
   /** Radius of loader */
