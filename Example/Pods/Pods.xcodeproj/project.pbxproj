@@ -9,9 +9,9 @@
 /* Begin PBXBuildFile section */
 		221B3AA9B090228092BD905381297574 /* Pods-KRLoader_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AD3081E6A13D1FB5897BC788AC61E69E /* Pods-KRLoader_Example-dummy.m */; };
 		303FDE2E38A15B5DA85243EA924439F3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
-		3829A3B0B94AA425F0F3CA5042CFB75E /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98A7F3284798BA1392FAA36E4DE4B78E /* ReplaceMe.swift */; };
 		46DAFD0C80C50ED21EC483BD80E33001 /* Pods-KRLoader_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E4F20D54B4F59A5572457829F45F8D4 /* Pods-KRLoader_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4D588DE79E29762895EBF0C4E1935919 /* KRLoader-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A67D19B33135938E31B7789E711F7BD2 /* KRLoader-dummy.m */; };
+		5237BDC8213D52B000BC5CCF /* KRLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5237BDC7213D52B000BC5CCF /* KRLoader.swift */; };
 		60DD583F3BCB4D554952A0DB410F2770 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
 		66B273565F7335A5543F2E395B729A4D /* KRLoader-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F82D2D830279F073A4872E0D8207D0C /* KRLoader-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		717B98261E8DB9D0A11D25E6A6CF9EF4 /* Pods-KRLoader_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8588D02D4800E61823A0AE9B2DA8AE38 /* Pods-KRLoader_Tests-dummy.m */; };
@@ -43,16 +43,16 @@
 		2981225808F445565570F00C7A1DB377 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2C5AF35702A3E6A288BBA727BBB40F86 /* Pods-KRLoader_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-KRLoader_Tests-resources.sh"; sourceTree = "<group>"; };
 		2F82D2D830279F073A4872E0D8207D0C /* KRLoader-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KRLoader-umbrella.h"; sourceTree = "<group>"; };
-		3AB87EF8AD0C84D8B365476CB6C922C3 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		3AB87EF8AD0C84D8B365476CB6C922C3 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		3D78910287730275F82E34B1D0284929 /* Pods-KRLoader_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-KRLoader_Tests.modulemap"; sourceTree = "<group>"; };
-		43E670DF97FF6AE708963AE3EDD0BBFF /* KRLoader.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = KRLoader.framework; path = KRLoader.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		43E670DF97FF6AE708963AE3EDD0BBFF /* KRLoader.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KRLoader.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D8248C8FC689E2ACDEDBDDD48261906 /* Pods-KRLoader_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-KRLoader_Tests-umbrella.h"; sourceTree = "<group>"; };
+		5237BDC7213D52B000BC5CCF /* KRLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KRLoader.swift; path = KRLoader/Classes/KRLoader.swift; sourceTree = "<group>"; };
 		546EB215A765A2A6316D4D2FA4E47324 /* Pods-KRLoader_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-KRLoader_Example-frameworks.sh"; sourceTree = "<group>"; };
 		5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		7D56090E90A6197D9EC32123C7B14AD5 /* Pods-KRLoader_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KRLoader_Example.release.xcconfig"; sourceTree = "<group>"; };
 		8588D02D4800E61823A0AE9B2DA8AE38 /* Pods-KRLoader_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-KRLoader_Tests-dummy.m"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		98A7F3284798BA1392FAA36E4DE4B78E /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReplaceMe.swift; path = KRLoader/Classes/ReplaceMe.swift; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A0C821B95C0D0EB0A3CC61A2A91EDDC2 /* Pods-KRLoader_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-KRLoader_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		A67D19B33135938E31B7789E711F7BD2 /* KRLoader-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "KRLoader-dummy.m"; sourceTree = "<group>"; };
 		A9A12469AA36D4FB57721F11ABB8A720 /* Pods-KRLoader_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-KRLoader_Example.modulemap"; sourceTree = "<group>"; };
@@ -60,15 +60,15 @@
 		AD3081E6A13D1FB5897BC788AC61E69E /* Pods-KRLoader_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-KRLoader_Example-dummy.m"; sourceTree = "<group>"; };
 		B00979D15D1D75502E966C4204FD1884 /* Pods-KRLoader_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KRLoader_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		B9B9A573618B7D7E0D7C91B75027A12A /* Pods-KRLoader_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-KRLoader_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		BB09EC3D89D3020EA8E387C5C3AEF936 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
-		C011CC4B135FFBD860DA1B6C5F267F38 /* KRLoader.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = KRLoader.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		BB09EC3D89D3020EA8E387C5C3AEF936 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		C011CC4B135FFBD860DA1B6C5F267F38 /* KRLoader.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = KRLoader.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		C63CC58C6DA1AB447FA35EBCBBC58A3E /* Pods-KRLoader_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KRLoader_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		C9DD4FF1FA415E76A6D09A8D62E3BC87 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CB3A1CACDC0D5DAFFBE88CDA9B432050 /* Pods_KRLoader_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_KRLoader_Tests.framework; path = "Pods-KRLoader_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB3A1CACDC0D5DAFFBE88CDA9B432050 /* Pods_KRLoader_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KRLoader_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD34C0BB0A59739AC29C69FC04F41A40 /* Pods-KRLoader_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KRLoader_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		D0813120DBB3E87F0B64FBB2053D124C /* KRLoader.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KRLoader.xcconfig; sourceTree = "<group>"; };
 		D5BB4376CAFDC7B6EA63A89599A504C2 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D5E2756689F74B0869CAE946C6FBE980 /* Pods_KRLoader_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_KRLoader_Example.framework; path = "Pods-KRLoader_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5E2756689F74B0869CAE946C6FBE980 /* Pods_KRLoader_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KRLoader_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB0219CE3C03E794F1740314CFBBF0DB /* Pods-KRLoader_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-KRLoader_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		E24EC0FF84364ACF91453BDC848251ED /* Pods-KRLoader_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-KRLoader_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		F54476B5B6DF17152B4D1BD22C5420B8 /* Pods-KRLoader_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-KRLoader_Example-resources.sh"; sourceTree = "<group>"; };
@@ -115,7 +115,7 @@
 		08F8C8D8AF01FC1C73119097F2A7F6CC /* KRLoader */ = {
 			isa = PBXGroup;
 			children = (
-				98A7F3284798BA1392FAA36E4DE4B78E /* ReplaceMe.swift */,
+				5237BDC7213D52B000BC5CCF /* KRLoader.swift */,
 				08C64A9AE43F28A7FC06FE5B02E03DD6 /* Pod */,
 				1802C1B7DFD42D335096DACAEC6FCF96 /* Support Files */,
 			);
@@ -318,6 +318,11 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0930;
 				LastUpgradeCheck = 0930;
+				TargetAttributes = {
+					FF430CB4195D092F0FA4642116CAF8CF = {
+						LastSwiftMigration = 0940;
+					};
+				};
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -344,7 +349,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4D588DE79E29762895EBF0C4E1935919 /* KRLoader-dummy.m in Sources */,
-				3829A3B0B94AA425F0F3CA5042CFB75E /* ReplaceMe.swift in Sources */,
+				5237BDC8213D52B000BC5CCF /* KRLoader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -386,6 +391,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D0813120DBB3E87F0B64FBB2053D124C /* KRLoader.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -677,6 +683,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D0813120DBB3E87F0B64FBB2053D124C /* KRLoader.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
