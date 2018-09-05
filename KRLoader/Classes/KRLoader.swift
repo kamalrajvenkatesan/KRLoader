@@ -29,18 +29,42 @@ public class KRLoader: UIView {
   /** Hiding the loader when animation stops */
   @IBInspectable var hideWhenStopped: Bool = false
 
-  private var centerPoint: CGPoint = CGPoint(x: 0, y: 0)
   private let shapeLayer = CAShapeLayer()
+  public var isAnimating = false
+
+  private var isDrawnNow = true
 
 
   override public func draw(_ rect: CGRect) {
     super.draw(rect)
 
-    self.centerPoint = CGPoint(x: rect.midX, y: rect.midY)
     createLoader()
+
+    self.isDrawnNow = true
+  }
+
+  public override func willMove(toWindow newWindow: UIWindow?) {
+    super.willMove(toWindow: newWindow)
+
+    guard !isDrawnNow else {
+      self.isDrawnNow = false
+      return
+    }
+    resumeAnimation()
+  }
+
+  /** Will resume if isAnimation is true*/
+  public func resumeAnimation() {
+    guard isAnimating else {
+      return
+    }
+
+    self.startAnimation()
   }
 
   public func startAnimation() {
+
+    isAnimating = true
 
     UIView.animate(withDuration: 0.2, animations: {
       self.alpha = 1.0
@@ -53,13 +77,14 @@ public class KRLoader: UIView {
       rotationAnimation.isCumulative = true
       rotationAnimation.repeatCount = HUGE
 
-      self.layer.add(rotationAnimation, forKey: "rotationAnimation")
+      self.shapeLayer.add(rotationAnimation, forKey: "rotationAnimation")
 
     })
-
   }
 
   public func stopAnimation() {
+
+    isAnimating = false
 
     UIView.animate(withDuration: 0.2, animations: {
       self.layer.removeAnimation(forKey: "rotationAnimation")
@@ -73,14 +98,15 @@ public class KRLoader: UIView {
 
   private func createLoader() {
 
-    let radius = (self.radius > 0.0) ? self.radius : min(self.bounds.width, self.bounds.height) / 2
+    shapeLayer.bounds = bounds
+    shapeLayer.position = CGPoint(x: bounds.width / 2.0, y: bounds.height / 2.0)
+    shapeLayer.path = UIBezierPath(ovalIn: bounds).cgPath
 
-    let circularPath = UIBezierPath(arcCenter: self.centerPoint, radius: radius, startAngle: 0, endAngle: -(CGFloat.pi / 2), clockwise: true)
-
-    shapeLayer.path = circularPath.cgPath
-    shapeLayer.fillColor = trackerColor.cgColor
+    shapeLayer.fillColor = UIColor.clear.cgColor
     shapeLayer.strokeColor = loaderColor.cgColor
     shapeLayer.lineWidth = loaderWidth
+    shapeLayer.strokeStart = 0.25
+    shapeLayer.strokeEnd = 1
 
     self.layer.addSublayer(shapeLayer)
 
