@@ -18,7 +18,7 @@ public class KRLoader: UIView {
   @IBInspectable var loaderColor: UIColor = UIColor.blue
 
   /** Tracker color */
-//  @IBInspectable var trackerColor: UIColor = UIColor.clear
+  @IBInspectable var trackerColor: UIColor = UIColor.clear
 
   /** duration to complete each cycle */
   @IBInspectable var duration: Double = 1.0
