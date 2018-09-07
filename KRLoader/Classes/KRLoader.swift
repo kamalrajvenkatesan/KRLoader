@@ -18,7 +18,7 @@ public class KRLoader: UIView {
   @IBInspectable var loaderColor: UIColor = UIColor.blue
 
   /** Tracker color */
-  @IBInspectable var trackerColor: UIColor = UIColor.clear
+//  @IBInspectable var trackerColor: UIColor = UIColor.clear
 
   /** duration to complete each cycle */
   @IBInspectable var duration: Double = 1.0
@@ -27,7 +27,7 @@ public class KRLoader: UIView {
   @IBInspectable var loaderWidth: CGFloat = 5
 
   /** Hiding the loader when animation stops */
-  @IBInspectable var hideWhenStopped: Bool = false
+//  @IBInspectable var hideWhenStopped: Bool = false
 
   private let shapeLayer = CAShapeLayer()
   public var isAnimating = false
@@ -62,6 +62,7 @@ public class KRLoader: UIView {
     self.startAnimation()
   }
 
+  /** Starting loading animation */
   public func startAnimation() {
 
     isAnimating = true
@@ -82,6 +83,7 @@ public class KRLoader: UIView {
     })
   }
 
+  /** Stop loading animation */
   public func stopAnimation() {
 
     isAnimating = false
@@ -109,6 +111,11 @@ public class KRLoader: UIView {
     shapeLayer.strokeEnd = 1
 
     self.layer.addSublayer(shapeLayer)
+
+    guard !isAnimating else {
+      // Animating
+      return
+    }
 
     self.transform = CGAffineTransform(scaleX: 0, y: 0)
     self.alpha = 0
